@@ -37,7 +37,7 @@
         <P> IO_CheckSteps =    1000                                        </P> <!-- Number of step to write the intermediate results -->
         <P> IO_InfoSteps  =    100                                        </P> <!-- Number of step to print information -->
         <P> IO_CFLSteps   =    100                                        </P> <!-- Number of step to print CFL number  -->
-        <P> Re            = 159                                   </P>
+        <P> Re            = 500                                  </P>
         <P> Kinvis        = 1/Re             	                       </P>
 
         <!--  
