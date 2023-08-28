@@ -33,7 +33,7 @@
 
     <PARAMETERS>
         <P> TimeStep      =    1.0e-4                                       </P> <!-- Time step -->   
-        <P> NumSteps      =    100000                                        </P> <!-- Number of step -->
+        <P> NumSteps      =    10000                                        </P> <!-- Number of step -->
         <P> IO_CheckSteps =    1000                                        </P> <!-- Number of step to write the intermediate results -->
         <P> IO_InfoSteps  =    100                                        </P> <!-- Number of step to print information -->
         <P> IO_CFLSteps   =    100                                        </P> <!-- Number of step to print CFL number  -->
@@ -91,25 +91,68 @@
 
     <FILTERS> 
         <FILTER TYPE="HistoryPoints">
-              <PARAM NAME="OutputFile">History_pts2</PARAM> <PARAM NAME="OutputFrequency">100</PARAM> <PARAM NAME="Points">
-                43.5 42.5 0.5
+              <PARAM NAME="OutputFile">inlet_a</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 36.1,44.82,0, 36.1,44.82,1, 36.1,43.56,1, 36.1,43.56,0
 	      </PARAM>
 	    </FILTER>
 
         <FILTER TYPE="HistoryPoints">
-              <PARAM NAME="OutputFile">History_inlet</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
-                100, 100, 36,44.82,0, 36,44.82,1, 36,43.56,1, 36,43.56,0
+              <PARAM NAME="OutputFile">inlet_b</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 38.5,44.82,0, 38.5,44.82,1, 38.5,43.56,1, 38.5,43.56,0
 	      </PARAM>
 	    </FILTER>
 
         <FILTER TYPE="HistoryPoints">
-              <PARAM NAME="OutputFile">History_outlet</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
-                100, 100, 36,42.27,1, 36,41.01,1, 36,41.01,0, 36,42.27,0
+              <PARAM NAME="OutputFile">inlet_c</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 40.5,44.82,0, 40.5,44.82,1, 40.5,43.56,1, 40.5,43.56,0
 	      </PARAM>
 	    </FILTER>
 
         <FILTER TYPE="HistoryPoints">
-              <PARAM NAME="OutputFile">History_bend</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+              <PARAM NAME="OutputFile">inlet_d</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 43,44.82,0, 43,44.82,1, 43,43.56,1, 43,43.56,0
+	      </PARAM>
+	    </FILTER>
+
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">outlet_a</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 36.1,42.27,1, 36.1,41.01,1, 36.1,41.01,0, 36.1,42.27,0
+	      </PARAM>
+	    </FILTER>
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">outlet_b</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 38.5,42.27,1, 38.5,41.01,1, 38.5,41.01,0, 38.5,42.27,0
+	      </PARAM>
+	    </FILTER>
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">outlet_c</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 40.5,42.27,1, 40.5,41.01,1, 40.5,41.01,0, 40.5,42.27,0
+	      </PARAM>
+	    </FILTER>
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">outlet_d</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 43,42.27,1, 43,41.01,1, 43,41.01,0, 43,42.27,0
+	      </PARAM>
+	    </FILTER>
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">bend_a</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 43.005,43.56,1, 44.265,43.56,1, 44.265,43.56,0, 43.005,43.56,0
+	      </PARAM>
+	    </FILTER>
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">bend_c</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
+                100, 100, 43.005,42.27,1, 44.265,42.27,1, 44.265,42.27,0, 43.005,42.27,0
+	      </PARAM>
+	    </FILTER>    
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">bend_b</PARAM> <PARAM NAME="OutputFrequency">5000</PARAM> <PARAM NAME="plane">
                 100, 100, 43.005,42.915,1, 44.265,42.915,1, 44.265,42.915,0, 43.005,42.915,0
 	      </PARAM>
 	    </FILTER>
